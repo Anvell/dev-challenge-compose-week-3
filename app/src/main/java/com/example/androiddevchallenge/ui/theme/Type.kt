@@ -17,27 +17,63 @@ package com.example.androiddevchallenge.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import com.example.androiddevchallenge.R
 
-// Set of Material typography styles to start with
+private val LatoFontFamily = FontFamily(
+    Font(R.font.lato_regular),
+    Font(R.font.lato_italic, style = FontStyle.Italic),
+    Font(R.font.lato_bold, FontWeight.Bold),
+    Font(R.font.lato_bolditalic, FontWeight.Bold, FontStyle.Italic),
+)
+
+private val KulimParkFontFamily = FontFamily(
+    Font(R.font.kulim_park_regular),
+    Font(R.font.kulim_park_italic, style = FontStyle.Italic),
+    Font(R.font.kulim_park_light, FontWeight.Light),
+    Font(R.font.kulim_park_lighitalic, FontWeight.Light, FontStyle.Italic),
+)
+
 val typography = Typography(
-    body1 = TextStyle(
-        fontFamily = FontFamily.Default,
+    defaultFontFamily = LatoFontFamily,
+    h1 = TextStyle(
+        fontFamily = KulimParkFontFamily,
+        fontWeight = FontWeight.Light,
+        fontSize = 28.sp,
+        letterSpacing = 1.15.sp
+    ),
+    h2 = TextStyle(
+        fontFamily = KulimParkFontFamily,
         fontWeight = FontWeight.Normal,
-        fontSize = 16.sp
-    )
-        /* Other default text styles to override
+        fontSize = 15.sp,
+        letterSpacing = 1.15.sp
+    ),
+    h3 = TextStyle(
+        fontFamily = LatoFontFamily,
+        fontWeight = FontWeight.Bold,
+        fontSize = 14.sp,
+        letterSpacing = 0.sp
+    ),
+    body1 = TextStyle(
+        fontFamily = LatoFontFamily,
+        fontWeight = FontWeight.Normal,
+        fontSize = 14.sp,
+        letterSpacing = 0.sp
+    ),
     button = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.W500,
-        fontSize = 14.sp
+        fontFamily = LatoFontFamily,
+        fontWeight = FontWeight.Bold,
+        fontSize = 14.sp,
+        letterSpacing = 1.15.sp
     ),
     caption = TextStyle(
-        fontFamily = FontFamily.Default,
+        fontFamily = LatoFontFamily,
         fontWeight = FontWeight.Normal,
-        fontSize = 12.sp
+        fontSize = 12.sp,
+        letterSpacing = 1.15.sp
     )
-    */
 )
