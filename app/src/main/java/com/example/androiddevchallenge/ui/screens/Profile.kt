@@ -13,12 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.androiddevchallenge.navigation
+package com.example.androiddevchallenge.ui.screens
 
-object Destinations {
-    val Welcome = "welcome"
-    val Login = "login"
-    val Home = "home"
-    val Dashboard = "dashboard"
-    val Profile = "profile"
+import androidx.compose.runtime.Composable
+
+@Composable
+fun Profile() {
 }
