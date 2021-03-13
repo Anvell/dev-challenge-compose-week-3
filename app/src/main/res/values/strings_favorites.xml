@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <!--
   Copyright 2020 The Android Open Source Project
   Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
@@ -10,14 +9,11 @@
   the License.
   -->
 <resources>
-    <dimen name="layout_horizontal_padding">16dp</dimen>
-    <dimen name="layout_vertical_padding">16dp</dimen>
-
-    <dimen name="spacing_xs">8dp</dimen>
-    <dimen name="spacing_s">16dp</dimen>
-    <dimen name="spacing_m">24dp</dimen>
-    <dimen name="spacing_l">32dp</dimen>
-    <dimen name="spacing_xl">40dp</dimen>
-    <dimen name="spacing_xxl">48dp</dimen>
-    <dimen name="spacing_xxxl">56dp</dimen>
+    <string name="favorites_title">Favorite collections</string>
+    <string name="favorites_1">Short mantras</string>
+    <string name="favorites_2">Nature meditations</string>
+    <string name="favorites_3">Stress and anxiety</string>
+    <string name="favorites_4">Self-massage</string>
+    <string name="favorites_5">Overwhelmed</string>
+    <string name="favorites_6">Nightly wind down</string>
 </resources>

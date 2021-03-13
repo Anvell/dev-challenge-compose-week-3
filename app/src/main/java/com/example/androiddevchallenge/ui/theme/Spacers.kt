@@ -52,4 +52,9 @@ object Spacers {
     fun Xxl() {
         Spacer(Modifier.size(dimensionResource(R.dimen.spacing_xxl)))
     }
+
+    @Composable
+    fun Xxxl() {
+        Spacer(Modifier.size(dimensionResource(R.dimen.spacing_xxxl)))
+    }
 }

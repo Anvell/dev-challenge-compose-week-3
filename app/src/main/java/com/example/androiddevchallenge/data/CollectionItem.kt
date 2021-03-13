@@ -13,11 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.androiddevchallenge.ui.screens
+package com.example.androiddevchallenge.data
 
-import androidx.compose.runtime.Composable
+import androidx.annotation.StringRes
 
-@Composable
-fun Profile() {
-    /* No content here */
-}
+data class CollectionItem(
+    @StringRes
+    val labelId: Int,
+    val imageUrl: String
+)

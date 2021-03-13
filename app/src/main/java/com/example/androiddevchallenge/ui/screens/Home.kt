@@ -18,16 +18,23 @@ package com.example.androiddevchallenge.ui.screens
 import androidx.compose.material.BottomNavigation
 import androidx.compose.material.BottomNavigationDefaults
 import androidx.compose.material.BottomNavigationItem
+import androidx.compose.material.FabPosition
+import androidx.compose.material.FloatingActionButton
+import androidx.compose.material.FloatingActionButtonDefaults
 import androidx.compose.material.Icon
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AccountCircle
+import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material.icons.filled.Spa
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.AnnotatedString
+import androidx.compose.ui.text.toUpperCase
+import androidx.compose.ui.unit.dp
 import androidx.navigation.compose.KEY_ROUTE
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -42,6 +49,20 @@ fun Home() {
     val navController = rememberNavController()
 
     Scaffold(
+        floatingActionButton = {
+            FloatingActionButton(
+                onClick = {},
+                backgroundColor = MaterialTheme.colors.primary,
+                elevation = FloatingActionButtonDefaults.elevation(0.dp, 0.dp)
+            ) {
+                Icon(
+                    imageVector = Icons.Filled.PlayArrow,
+                    contentDescription = null
+                )
+            }
+        },
+        floatingActionButtonPosition = FabPosition.Center,
+        isFloatingActionButtonDocked = true,
         bottomBar = {
             BottomNavigation(
                 backgroundColor = MaterialTheme.colors.background,
@@ -54,10 +75,16 @@ fun Home() {
                     icon = {
                         Icon(
                             imageVector = Icons.Filled.Spa,
-                            contentDescription = null
+                            contentDescription = stringResource(R.string.bottom_navigation_home)
                         )
                     },
-                    label = { Text(stringResource(R.string.bottom_navigation_home)) },
+                    label = {
+                        Text(
+                            text = AnnotatedString(
+                                stringResource(R.string.bottom_navigation_home)
+                            ).toUpperCase(),
+                        )
+                    },
                     selected = currentRoute == Destinations.Dashboard,
                     onClick = {
                         navController.navigate(Destinations.Dashboard) {
@@ -71,10 +98,16 @@ fun Home() {
                     icon = {
                         Icon(
                             imageVector = Icons.Filled.AccountCircle,
-                            contentDescription = null
+                            contentDescription = stringResource(R.string.bottom_navigation_profile)
                         )
                     },
-                    label = { Text(stringResource(R.string.bottom_navigation_home)) },
+                    label = {
+                        Text(
+                            text = AnnotatedString(
+                                stringResource(R.string.bottom_navigation_profile)
+                            ).toUpperCase()
+                        )
+                    },
                     selected = currentRoute == Destinations.Profile,
                     onClick = {
                         navController.navigate(Destinations.Profile) {

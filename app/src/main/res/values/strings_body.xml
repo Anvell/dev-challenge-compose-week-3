@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <!--
   Copyright 2020 The Android Open Source Project
   Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
@@ -10,14 +9,11 @@
   the License.
   -->
 <resources>
-    <dimen name="layout_horizontal_padding">16dp</dimen>
-    <dimen name="layout_vertical_padding">16dp</dimen>
-
-    <dimen name="spacing_xs">8dp</dimen>
-    <dimen name="spacing_s">16dp</dimen>
-    <dimen name="spacing_m">24dp</dimen>
-    <dimen name="spacing_l">32dp</dimen>
-    <dimen name="spacing_xl">40dp</dimen>
-    <dimen name="spacing_xxl">48dp</dimen>
-    <dimen name="spacing_xxxl">56dp</dimen>
+    <string name="body_title">Align your body</string>
+    <string name="body_1">Inversions</string>
+    <string name="body_2">Quick yoga</string>
+    <string name="body_3">Stretching</string>
+    <string name="body_4">Tabata</string>
+    <string name="body_5">HIIT</string>
+    <string name="body_6">Pre-natal yoga</string>
 </resources>

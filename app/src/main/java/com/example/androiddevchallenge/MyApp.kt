@@ -30,7 +30,7 @@ fun MyApp() {
 
     NavHost(
         navController = navController,
-        startDestination = Destinations.Home
+        startDestination = Destinations.Welcome
     ) {
         composable(Destinations.Welcome) { Welcome(navController) }
         composable(Destinations.Login) { Login(navController) }
