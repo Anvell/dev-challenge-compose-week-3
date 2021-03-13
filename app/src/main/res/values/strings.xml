@@ -18,6 +18,8 @@
     <string name="login_text_field_email_label">Email address</string>
     <string name="login_text_field_password_label">Password</string>
 
+    <string name="dashboard_text_field_search_label">Search</string>
+
     <string name="bottom_navigation_home">Home</string>
     <string name="bottom_navigation_profile">Profile</string>
 </resources>

@@ -65,7 +65,7 @@ fun Dashboard() {
         AppTheme.TextField(
             value = search,
             onValueChange = { search = it },
-            label = { Text(stringResource(R.string.login_text_field_email_label)) },
+            label = { Text(stringResource(R.string.dashboard_text_field_search_label)) },
             leading = {
                 Icon(
                     imageVector = Icons.Outlined.Search,
