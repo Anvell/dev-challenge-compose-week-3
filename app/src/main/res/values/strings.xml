@@ -11,6 +11,10 @@
       -->
     <string name="app_name">AndroidDevChallenge</string>
 
-    <string name="welcome_signup">Sign Up</string>
-    <string name="welcome_login">Log In</string>
+    <string name="common_signup">Sign up</string>
+    <string name="common_login">Log in</string>
+
+    <string name="login_label_account_signup">Don’t have an account?</string>
+    <string name="login_text_field_email_label">Email address</string>
+    <string name="login_text_field_password_label">Password</string>
 </resources>

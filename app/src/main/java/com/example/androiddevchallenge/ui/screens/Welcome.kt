@@ -16,7 +16,12 @@
 package com.example.androiddevchallenge.ui.screens
 
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.BoxScope
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -55,14 +60,14 @@ fun Welcome(navController: NavController) {
             Spacers.L()
 
             AppTheme.PrimaryButton(
-                text = stringResource(R.string.welcome_signup),
+                text = stringResource(R.string.common_signup),
                 onClick = {},
                 modifier = Modifier.fillMaxWidth()
             )
             Spacers.Xs()
 
             AppTheme.Button(
-                text = stringResource(R.string.welcome_login),
+                text = stringResource(R.string.common_login),
                 onClick = { navController.navigate(Destinations.Login) },
                 modifier = Modifier.fillMaxWidth()
             )
