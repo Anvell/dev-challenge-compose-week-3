@@ -13,12 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.androiddevchallenge.ui.components
+package com.example.androiddevchallenge.ui.screens
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavController
 
 @Composable
-fun Welcome(navController: NavController) {
-
+fun Login(navController: NavController) {
 }

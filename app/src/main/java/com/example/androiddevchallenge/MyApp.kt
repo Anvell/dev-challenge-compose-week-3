@@ -20,9 +20,9 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.androiddevchallenge.navigation.Destinations
-import com.example.androiddevchallenge.ui.components.Home
-import com.example.androiddevchallenge.ui.components.Login
-import com.example.androiddevchallenge.ui.components.Welcome
+import com.example.androiddevchallenge.ui.screens.Home
+import com.example.androiddevchallenge.ui.screens.Login
+import com.example.androiddevchallenge.ui.screens.Welcome
 
 @Composable
 fun MyApp() {

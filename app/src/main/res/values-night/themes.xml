@@ -10,9 +10,12 @@
       the License.
       -->
     <!-- Base application theme. -->
-    <style name="Theme.AndroidDevChallenge" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.AndroidDevChallenge" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="background">@color/gray_900</item>
+        <item name="android:colorBackground">@color/gray_900</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
+
+        <item name="android:windowLightStatusBar">false</item>
     </style>
 </resources>
